@@ -1,0 +1,231 @@
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+
+
+    50%{
+        transform: scale(2.5);
+    }
+
+    100% {
+        transform: scale(1.7);
+
+    }
+}
+
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+html,body {
+     padding: 0;
+     margin: 0;
+    
+
+    /* 
+    set padding and margin to 0
+    */
+}
+
+.header-text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 8px;
+    
+
+}
+
+
+/* h1 */
+/*#logo-text*/
+
+.logo-text
+{
+    color: rgba(28, 15, 218, 0.9);
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 40px;
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container{
+    display: inline-block;
+    /*outline: 1px solid blue */
+}
+
+
+.nav-link
+{
+
+    color: rgba(52, 11, 235, 0.801);
+    text-decoration: none;
+    margin-right: 8px
+
+
+}
+
+
+.hero-image {
+    /* 
+    must use../ 
+    */
+    background-image: url(../Images/galaxy-infinity-milky-way-110854.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 100%;
+    font-family: 'Special Elite', cursive;
+    color: rgb(245, 243, 243);
+    padding-bottom: 10px;
+
+}
+
+
+/*Flextbox*/
+.center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    padding: 0 8px;
+    font-family: unset;
+
+}
+
+.profile-image {
+    width: 250px;
+    margin: 0 auto;
+}
+
+
+.contact-links{
+    background-color:black; 
+    padding:18px 22px;
+
+    display: flex;
+    justify-content: center;
+
+
+    }
+
+    .contact-links i{
+        color: white
+    }
+
+    .contact-links .fab,
+    .contact-links .fas {
+        color: white;
+        padding: 0 18px;
+        margin: 0 8px;
+        font-size: 36px; 
+        /* transition: transform .25s ease-in-out .2s; */
+    }
+
+    .contact-links a:hover .fab,
+    .contact-links a:hover .fas,
+    {
+    cursor: pointer;
+    }
+
+    .contact-links a:hover .fab,
+    .contact-links a:hover .fas,
+    .contact-links a:active .fab,
+    .contact-links a:active .fas{
+        color: rgb(47, 9, 218);
+        /* transform: scale3d(5.0);   */
+        animation: zoom;
+        animation-duration: .25s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+       
+    }
+
+
+
+
+
+
+
+.profile-image img {
+    width: 100%;
+    border-radius: 800px;
+
+}
+
+/*Responsive Web Design Implementation 
+aka Media Queries!
+if/else for CSS
+
+*/
+/* 
+Common "Breakpoints"
+S,M,L,XL,Party size
+500px
+768px
+1024px
+1200px
+1400px
+*/
+
+@media screen and (min-width: 500px) {
+
+    .about-me {
+        display: flex;
+        flex-direction:
+    }
+    .about-me > div {
+        
+    }
+
+
+    .profile-image{
+        /*outline: 5px solid red */
+        width: 200px;
+    }
+
+    
+
+    .about-me-container {
+
+        width: 90%;
+        padding-right:10px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 900px ) {
+    .hero-text h2 {
+        font-size: 40px 
+    }
+
+    .header-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .header-text > * {
+       
+    }
+}
+
+@media screen and (min-width: 900px) {
+    /*.header-text > nav {
+        display: none; */
+    }
+
